@@ -1,0 +1,19 @@
+{
+  "name": "kapture-cx",
+  "version": "1.0.0",
+  "description": "Kapture Finance - AI Collections Assistant",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview"
+  },
+  "keywords": [
+    "vapi",
+    "react",
+    "ai",
+    "collections"
+  ],
+  "author": "",
+  "license": "MIT"
+}
