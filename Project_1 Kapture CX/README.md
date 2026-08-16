@@ -49,10 +49,13 @@ kapture-collections-voicebot/
 ├── vapi/
 │   ├── system_prompt.txt        # Production Vapi system prompt (state machine + compliance)
 │   └── tool_definitions.json    # 5 tool schemas for Vapi function calling
-├── mock-server/
+├── mock-server/             # Express webhook server handling Vapi tool calls
 │   ├── package.json             # Node.js dependencies (express, cors, dotenv)
 │   ├── server.js                # Express webhook server handling Vapi tool calls
 │   └── .env.example             # Environment variables template
+├── frontend/                    # Vite React Web Interface
+│   ├── src/                     # React source code and Vapi Web SDK integration
+│   └── package.json             # React dependencies
 └── tests/
     └── test_cases.json          # 14 test scenarios covering all flows and edge cases
 ```
@@ -80,7 +83,7 @@ npm install
 # 3. Configure environment
 cp .env.example .env
 
-# 4. Start the server
+# 4. Start the webhook server
 npm start
 # Server runs on http://localhost:3000
 
@@ -88,7 +91,12 @@ npm start
 ngrok http 3000
 # Copy the HTTPS forwarding URL (e.g., https://xxxx.ngrok-free.app)
 
-# 6. Configure Vapi assistant (see guide below)
+# 6. Set up the frontend UI (in a new terminal)
+cd frontend
+npm run dev
+# Open http://localhost:5173 to view the Maya UI!
+
+# 7. Configure Vapi assistant (see guide below)
 ```
 
 ---
