@@ -4,7 +4,7 @@ import CallInterface from './components/CallInterface';
 
 // IMPORTANT: Replace these with your actual Vapi keys
 const VAPI_PUBLIC_KEY = 'b11867c2-20b8-4cdf-a9d1-ff3db2eb2ec9'; 
-const ASSISTANT_ID = '064bc99b-66af-4deb-b36a-8044fe153ab5'; 
+const ASSISTANT_ID = 'f52ce34f-f506-4566-a4cf-f3900ce6e84e'; 
 
 function App() {
   const vapiRef = useRef(null);
